@@ -173,3 +173,18 @@ Query will not excute until:
 - Iterating over query variable
 - Calling ToList, ToArray, ToDictionary
 - Calling First, Last, Single, Count, Max, Min, Average
+
+
+## Lazy Loading
+- Turn off lazy loading, should use when develop web application.
+```csharp
+public class PlutoContext : DbContext
+{
+    public PlutoContext()
+        : base("name=PlutoContext")
+    {
+        this.Configuration.LazyLoadingEnabled = false;
+    }
+}
+```
+
