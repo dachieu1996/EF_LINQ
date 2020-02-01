@@ -188,3 +188,7 @@ public class PlutoContext : DbContext
 }
 ```
 
+## Eager Loading
+```csharp
+var courses = context.Courses.Include(c => c.Author).ToList();
+```
