@@ -150,3 +150,9 @@ var min = context.Courses.Min(c => c.Price);
 var avg = context.Courses.Average(c => c.Price);
 var sum = context.Courses.Sum(c => c.Price);
 ```
+
+## Deferred Execution
+Query will not excute until:
+- Iterating over query variable
+- Calling ToList, ToArray, ToDictionary
+- Calling First, Last, Single, Count, Max, Min, Average
