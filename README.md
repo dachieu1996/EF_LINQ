@@ -1,4 +1,4 @@
-# EF_LINQ_LinqSyntax
+# EF_LINQ
 
 ## Restriction
 ```csharp
